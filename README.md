@@ -3,14 +3,14 @@
 ## Install
 
 ```bash
-brew install agentasticai/tap/agentastic
+brew install agentasticai/tap/dev
 ```
 
 Or:
 
 ```bash
 brew tap agentasticai/tap
-brew install agentastic
+brew install dev
 ```
 
 ## About
