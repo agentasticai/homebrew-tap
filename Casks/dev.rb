@@ -1,4 +1,4 @@
-cask "agentastic" do
+cask "dev" do
   version "0.5.18"
   sha256 :no_check
 
