@@ -1,6 +1,6 @@
 cask "dev" do
-  version "0.5.20"
-  sha256 "966874b6b03589260fbfcff3ed93eb3ba9363f044dd36f0b3ac45c080ae9765a"
+  version "0.5.21"
+  sha256 "60c32331f3053359c8019c6be1e9b4deae4b19082081cd77d4093ac457cf764d"
 
   url "https://releases.agentastic.ai/agentasticdev/Agentastic.dev-#{version}.dmg"
   name "Agentastic.dev"
