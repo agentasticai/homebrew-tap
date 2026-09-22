@@ -4,30 +4,30 @@
 class Agentastic < Formula
   desc "Agentastic coding agent CLI"
   homepage "https://www.agentastic.dev"
-  version "0.12.0"
+  version "0.13.0"
   license "Apache-2.0"
 
-  BASE = "https://releases.agentastic.ai/agent/v0.12.0".freeze
+  BASE = "https://releases.agentastic.ai/agent/v0.13.0".freeze
 
   on_macos do
     on_arm do
-      url "#{BASE}/agentastic-0.12.0-aarch64-apple-darwin.tar.gz"
-      sha256 "c803d52bdae4b5ee5b904c9caa03dbe37f630ba38d027a4d3fe4e70222a9ae2d"
+      url "#{BASE}/agentastic-0.13.0-aarch64-apple-darwin.tar.gz"
+      sha256 "c290dc747e4a2d148be58581eeeee00c152f4c12ed5c462941863973e01e85e0"
     end
     on_intel do
-      url "#{BASE}/agentastic-0.12.0-x86_64-apple-darwin.tar.gz"
-      sha256 "cc8cdb8af3cb0bfb00916afad4043cf2c425dfcf01cbdaf11017cd8e10b81cf0"
+      url "#{BASE}/agentastic-0.13.0-x86_64-apple-darwin.tar.gz"
+      sha256 "b933494171dc436daf096f3802e2406a95d56a77fcac3d0b7513ed38cc0adb6c"
     end
   end
 
   on_linux do
     on_arm do
-      url "#{BASE}/agentastic-0.12.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "a33d9a8d92481109de734112583dba6da07ddb9da43324c8b1b803c32ed7bd15"
+      url "#{BASE}/agentastic-0.13.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "d4836f071702838d6432cd707112c0b8f5d3abd7d5e765bc53529ab9152f45bf"
     end
     on_intel do
-      url "#{BASE}/agentastic-0.12.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "40a56f07bc641ad78bc2c21875b467b7a880250022ea250e9ef054cbaa4b6d48"
+      url "#{BASE}/agentastic-0.13.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "c757c397f2c288b8ad40f6017d5250522d5ec849f8e7f8a69b954d83f731b4ec"
     end
   end
 
