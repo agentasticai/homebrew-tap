@@ -2,8 +2,7 @@ cask "dev" do
   version "0.13.1"
   sha256 "42896603a28da8951d23408c4a53e56fb5c3a9ec0139afdfdb033e514778aa42"
 
-  url "https://releases.agentastic.ai/agentasticdev/Agentastic.dev-#{version}.dmg",
-      verified: "releases.agentastic.ai/agentasticdev/"
+  url "https://releases.agentastic.ai/agentasticdev/Agentastic.dev-#{version}.dmg"
   name "Agentastic.dev"
   desc "Native macOS code editor"
   homepage "https://www.agentastic.dev"
