@@ -9,8 +9,15 @@ class Agentastic < Formula
 
   BASE = "https://releases.agentastic.ai/agent/v0.16.0".freeze
 
-  conflicts_with "agentastic-beta", "agentastic-nightly",
-    because: "every Agentastic release train installs the `agentastic` command"
+  # Homebrew loads every declared conflict, even when it is not installed. Only
+  # inspect active kegs so upgrading one trusted train does not require trusting
+  # the other trains (or loading a nightly formula that has not been published).
+  ["agentastic-beta", "agentastic-nightly"].each do |name|
+    next unless (HOMEBREW_PREFIX/"var/homebrew/linked"/name).exist? && (HOMEBREW_PREFIX/"opt"/name).exist?
+
+    conflicts_with "agentasticai/tap/#{name}",
+      because: "every Agentastic release train installs the `agentastic` command"
+  end
 
   on_macos do
     on_arm do
