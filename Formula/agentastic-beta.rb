@@ -4,10 +4,10 @@
 class AgentasticBeta < Formula
   desc "Agentastic coding agent CLI (beta channel)"
   homepage "https://www.agentastic.dev"
-  version "0.16.0"
+  version "0.17.0"
   license "Apache-2.0"
 
-  BASE = "https://releases.agentastic.ai/agent/v0.16.0".freeze
+  BASE = "https://releases.agentastic.ai/agent/v0.17.0".freeze
 
   # Homebrew loads every declared conflict, even when it is not installed. Only
   # inspect active kegs so upgrading one trusted train does not require trusting
@@ -21,23 +21,23 @@ class AgentasticBeta < Formula
 
   on_macos do
     on_arm do
-      url "#{BASE}/agentastic-0.16.0-aarch64-apple-darwin.tar.gz"
-      sha256 "fb04a867779e8c1a83e94569b57511e05d6d46317370a9de0616cdc52d34668d"
+      url "#{BASE}/agentastic-0.17.0-aarch64-apple-darwin.tar.gz"
+      sha256 "103a3dbccfefed881869c7eb7588c41b1d8b19beff60dd22c2d94649856a9522"
     end
     on_intel do
-      url "#{BASE}/agentastic-0.16.0-x86_64-apple-darwin.tar.gz"
-      sha256 "67b03cbdb6c42879dca47f6903d61556f8fa476bd98595d49997839935bf4ce5"
+      url "#{BASE}/agentastic-0.17.0-x86_64-apple-darwin.tar.gz"
+      sha256 "c0579d423645e271c7ddba360f4da6165df4a67234b25e90f8a067f97b58c5db"
     end
   end
 
   on_linux do
     on_arm do
-      url "#{BASE}/agentastic-0.16.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "7b075108ee64a48682aa21a5a76ec06a6dc4c26b8e3ffd5491e5f5a8e95ef5de"
+      url "#{BASE}/agentastic-0.17.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "2419ff3c08bf2d8b1dcfd73fccfa99da267523965a69fe078f08320389da129d"
     end
     on_intel do
-      url "#{BASE}/agentastic-0.16.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "6dc05d11c089e2f7560b4b2d9deaf6ecbe071b0ecce40033f7f4c8f92e0c7f65"
+      url "#{BASE}/agentastic-0.17.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "0ec4f813c475eab9cba033c94708906a74bab3bb3f074d6bd156424476f962c3"
     end
   end
 
